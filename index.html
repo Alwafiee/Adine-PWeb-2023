@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adine Alwafiena</title>
+  <!-- Hubungkan ke CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <h1>Portofolio</h1>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero" id="hero">
+    <h2>Halo, Saya Adine</h2>
+    <p>Seorang pelajar pemula yang suka belajar hal baru.</p>
+    <button onclick="scrollToSection('about')">Tentang Saya</button>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>Tentang Saya</h2>
+    <p>
+      Saya sedang belajar membuat website dengan HTML, CSS, dan JavaScript.
+      Tujuan saya adalah membuat website yang sederhana, menarik, dan fungsional untuk digunakan.
+    </p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Proyek Saya</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=1" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Website portofolio sederhana.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=2" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Latihan desain halaman landing page.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/400/200?random=3" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Eksperimen dengan JavaScript interaktif.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Hubungi Saya</h2>
+    <div class="contact">
+      <form>
+        <label for="name">Nama Lengkap</label>
+        <input type="text" id="name" placeholder="Masukkan nama anda" required>
+        
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Masukkan email anda" required>
+
+        <label for="phone">No. Telepon</label>
+        <input type="tel" id="phone" placeholder="Masukkan nomor telepon">
+
+        <label for="message">Pesan</label>
+        <textarea id="message" rows="4" placeholder="Tulis pesan..."></textarea>
+
+        <button type="submit">Kirim</button>
+        
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Al Wafie. Dibuat dengan HTML, CSS, dan JS sederhana.</p>
+  </footer>
+
+  <!-- Hubungkan ke JS -->
+  <script src="script.js"></script>
+</body>
+</html>

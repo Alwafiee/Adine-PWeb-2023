@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: #f5f5f5;
+}
+
+/* Navbar */
+header {
+  background: #000814;
+  padding: 15px 30px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+
+header h1 {
+  font-size: 20px;
+  color: #00aaff;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+nav a {
+  margin-left: 20px;
+  color: #f5f5f5;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #00aaff;
+}
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,20,0.9)), 
+              url("https://picsum.photos/1200/700") center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.hero h2 {
+  font-size: 36px;
+  color: #00aaff;
+}
+
+.hero p {
+  margin: 15px 0;
+  font-size: 18px;
+}
+
+.hero button {
+  padding: 10px 20px;
+  border: none;
+  background: #00aaff;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.hero button:hover {
+  background: #0088cc;
+}
+
+/* Sections */
+section {
+  padding: 80px 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+section h2 {
+  text-align: center;
+  color: #00aaff;
+  margin-bottom: 20px;
+}
+
+section p {
+  text-align: center;
+  color: #ddd;
+}
+
+/* Projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.card {
+  background: #1a1a1a;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 10px;
+  color: #00aaff;
+}
+
+.card p {
+  margin: 0 10px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+/* Contact Form */
+.contact {
+  background: #1a1a1a;
+  padding: 40px;
+  border-radius: 8px;
+  margin-top: 50px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact label {
+  text-align: left;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.contact input, .contact textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+.contact button {
+  background: #00aaff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #0088cc;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #000814;
+  color: #aaa;
+  margin-top: 40px;
+}
